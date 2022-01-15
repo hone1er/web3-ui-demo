@@ -27,9 +27,7 @@ export default function NextSetup() {
       <br />
       <p className="text-xs">
         *this demo uses{" "}
-        <code className="bg-slate-200 p-1">
-          yarn create next-app --typescript
-        </code>
+        <code className="bg-slate-200 p-1">yarn create next-app</code>
       </p>
     </div>
   );
