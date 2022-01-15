@@ -37,7 +37,7 @@ export default function UsingConnectWallet() {
           </Button>
         )}
       </div>
-      <Image src={ConnectImage}></Image>
+      <Image src={ConnectImage} alt="Image of code"></Image>
     </div>
   );
 }

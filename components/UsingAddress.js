@@ -34,7 +34,7 @@ export default function UsingAddress() {
           </>
         )}
       </div>
-      <Image src={AddressImage}></Image>
+      <Image src={AddressImage} alt="using address component code"></Image>
     </div>
   );
 }

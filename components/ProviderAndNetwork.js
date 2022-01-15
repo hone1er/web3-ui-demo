@@ -10,7 +10,9 @@ export default function ProviderAndNetwork() {
         components properly is import{" "}
         <code className="bg-slate-300 p-2 my-4">Provider</code> and{" "}
         <code className="bg-slate-300 p-2 my-4">NETWORKS</code> from{" "}
-        <code className="bg-slate-300 p-2 my-4">"@web3-ui/hooks"</code>
+        <code className="bg-slate-300 p-2 my-4">
+          &quot;@web3-ui/hooks&quot;
+        </code>
         <br />
         <br />
         <br />
@@ -19,7 +21,7 @@ export default function ProviderAndNetwork() {
         <code className="bg-slate-300 p-2 my-4">network</code>
       </p>
 
-      <Image src={ProviderImage}></Image>
+      <Image src={ProviderImage} alt="Image of code"></Image>
     </div>
   );
 }
