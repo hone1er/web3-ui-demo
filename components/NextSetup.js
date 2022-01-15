@@ -20,6 +20,7 @@ export default function NextSetup() {
           className="text-blue-600"
           href="https://nextjs.org/docs"
           target="_blank"
+          rel="noreferrer"
         >
           NextJS DOCS
         </a>{" "}
