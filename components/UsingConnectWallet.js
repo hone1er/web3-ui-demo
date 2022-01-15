@@ -1,9 +1,8 @@
 import ConnectImage from "../images/ConnectImage.png";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { useWallet } from "@web3-ui/hooks";
-
 export default function UsingConnectWallet() {
   const { connected, connectWallet, disconnectWallet } = useWallet();
   return (
@@ -14,12 +13,14 @@ export default function UsingConnectWallet() {
           wallet. For that you can use{" "}
           <code className="bg-slate-300 p-2 my-4">connectWallet</code> and{" "}
           <code className="bg-slate-300 p-2 my-4">disconnectWallet</code>{" "}
-          functions to make working with the connection easy!
+          methods to make working with the connection easy!
         </p>
         <p className="p-4 text-lg w-4/5 leading-10 m-4">
           But first you&apos;ll want to check if you&apos;re{" "}
-          <code className="bg-slate-300 p-2 my-4 ">connected</code>. The image
-          here shows how the connect button below is implemented.
+          <code className="bg-slate-300 p-2 my-4 ">connected</code>. All of this
+          funcionality(and more...but that&apos;s for later) is accessible via
+          the <code className="bg-slate-300 p-2 my-4 ">useWallet</code> hook.
+          The image here shows how the connect button below is implemented.
         </p>
         {!connected ? (
           <Button
