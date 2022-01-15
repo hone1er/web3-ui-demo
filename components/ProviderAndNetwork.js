@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function ProviderAndNetwork() {
   return (
     <div className="flex flex-col lg:flex-row w-full min-h-screen h-full items-center bg-slate-100">
-      <p className="p-16 text-lg w-4/5 text-center leading-10">
+      <p className="p-16 text-lg w-4/5 leading-10">
         The first thing you need to do in order to use all the hooks and
         components properly is import{" "}
         <code className="bg-slate-300 p-2 my-4">Provider</code> and{" "}
