@@ -1,4 +1,5 @@
 import React from "react";
+import "tailwindcss/tailwind.css";
 import UsingConnectWallet from "../components/UsingConnectWallet";
 import UsingAddress from "../components/UsingAddress";
 const Basics = () => {
