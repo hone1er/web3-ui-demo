@@ -15,13 +15,13 @@ export default function NextSetup() {
       </h2>
       <p className="">
         To get started create your app with{" "}
-        <span className="text-lg text-pink-600">`create-next-app`</span>
+        <span className="text-lg text-violet-700">`create-next-app`</span>
       </p>
       <br />
       <p>
         If you need more information you can follow the documentation here:{" "}
         <a
-          className="text-blue-600"
+          className="text-amber-500"
           href="https://nextjs.org/docs"
           target="_blank"
           rel="noreferrer"

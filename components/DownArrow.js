@@ -7,10 +7,10 @@ export default function DownArrow({ href }) {
   return (
     <Link href={href}>
       <motion.div
-        className="downArrow bounce absolute h-full cursor-pointer"
+        className="downArrow bounce absolute cursor-pointer w-full text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.25 }}
+        transition={{ delay: 1.25, duration: 0.5 }}
       >
         <Image
           width="50"

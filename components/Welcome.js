@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Welcome() {
   return (
-    <div className="flex flex-col relative w-full min-h-screen h-full justify-center items-center bg-slate-100">
+    <div className="flex flex-col relative w-full min-h-max h-screen justify-center items-center bg-slate-100">
       <motion.h1
         className="text-lg sm:text-2xl md:text-4xl w-full text-center "
         initial={{
@@ -21,7 +21,8 @@ export default function Welcome() {
           ease: "backInOut",
         }}
       >
-        Welcome the web3-UI demo w/ NextJS!
+        Welcome the <span className="text-violet-700 uppercase">web3-ui</span>{" "}
+        demo w/ <span className="uppercase text-amber-500">Nextjs</span>!
       </motion.h1>
       <DownArrow href={"/#intro"} />
     </div>
