@@ -22,7 +22,10 @@ const Home = () => {
       <NextSetup />
       <AddWeb3 />
       <ProviderAndNetwork />
-      <div className="flex flex-col lg:flex-row-reverse w-full min-h-screen h-full justify-center items-center bg-slate-200">
+      <div
+        className="flex flex-col lg:flex-row-reverse w-full min-h-screen h-full justify-center items-center bg-slate-200"
+        id="nextpage"
+      >
         <div className="flex flex-col justify-center items-center p-10">
           <p className="p-4 text-lg w-4/5 leading-10">
             Great! Now we are ready to dive into some basic components and

@@ -1,8 +1,12 @@
 import React from "react";
+import DownArrow from "./DownArrow";
 
 export default function NextSetup() {
   return (
-    <div className="flex justify-center items-center flex-col w-full min-h-screen p-16 bg-slate-300 text-center">
+    <div
+      className="flex relative justify-center items-center flex-col w-full min-h-screen p-16 bg-slate-300 text-center"
+      id="nextjs"
+    >
       <h2
         className="text-lg sm:text-2xl md:text-4xl pt-4 pb-16 underline underline-offset-8 decoration-slate-400 text-center"
         id="gettingStarted"
@@ -30,6 +34,7 @@ export default function NextSetup() {
         *this demo uses{" "}
         <code className="bg-slate-200 p-1">yarn create next-app</code>
       </p>
+      <DownArrow href={"/#web3libraries"} />
     </div>
   );
 }

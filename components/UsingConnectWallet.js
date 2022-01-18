@@ -3,42 +3,47 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@chakra-ui/react";
 import { useWallet } from "@web3-ui/hooks";
+import DownArrow from "./DownArrow";
 export default function UsingConnectWallet() {
   const { connected, connectWallet, disconnectWallet } = useWallet();
   return (
-    <div className="flex flex-col lg:flex-row-reverse w-full min-h-screen h-full items-center bg-slate-200">
-      <div className="flex flex-col justify-center items-center p-10">
-        <p className="p-4 text-lg w-4/5 leading-10">
-          Most apps are going to need a way to connect to the user&apos;s
-          wallet. For that you can use{" "}
-          <code className="bg-slate-300 p-2 my-4">connectWallet</code> and{" "}
-          <code className="bg-slate-300 p-2 my-4">disconnectWallet</code>{" "}
-          methods to make working with the connection easy!
-        </p>
-        <p className="p-4 text-lg w-4/5 leading-10 m-4">
-          But first you&apos;ll want to check if you&apos;re{" "}
-          <code className="bg-slate-300 p-2 my-4 ">connected</code>. All of this
-          funcionality(and more...but that&apos;s for later) is accessible via
-          the <code className="bg-slate-300 p-2 my-4 ">useWallet</code> hook.
-          The image here shows how the connect button below is implemented.
-        </p>
-        {!connected ? (
-          <Button
-            className="py-4 px-8 bg-slate-600 rounded-lg text-slate-100"
-            onClick={connectWallet}
-          >
-            Connect
-          </Button>
-        ) : (
-          <Button
-            className="py-4 px-8 bg-slate-600 rounded-lg text-slate-100"
-            onClick={disconnectWallet}
-          >
-            Disconnect
-          </Button>
-        )}
+    <div className="flex flex-col relative">
+      <div className="flex flex-col relative lg:flex-row-reverse w-full min-h-screen h-full items-center bg-slate-200">
+        <div className="flex flex-col justify-center items-center p-10">
+          <p className="p-4 text-lg w-4/5 leading-10">
+            Most apps are going to need a way to connect to the user&apos;s
+            wallet. For that you can use{" "}
+            <code className="bg-slate-300 p-2 my-4">connectWallet</code> and{" "}
+            <code className="bg-slate-300 p-2 my-4">disconnectWallet</code>{" "}
+            methods to make working with the connection easy!
+          </p>
+          <p className="p-4 text-lg w-4/5 leading-10 m-4">
+            But first you&apos;ll want to check if you&apos;re{" "}
+            <code className="bg-slate-300 p-2 my-4 ">connected</code>. All of
+            this funcionality(and more...but that&apos;s for later) is
+            accessible via the{" "}
+            <code className="bg-slate-300 p-2 my-4 ">useWallet</code> hook. The
+            image here shows how the connect button below is implemented.
+          </p>
+          {!connected ? (
+            <Button
+              className="py-4 px-8 bg-slate-600 rounded-lg text-slate-100"
+              onClick={connectWallet}
+            >
+              Connect
+            </Button>
+          ) : (
+            <Button
+              className="py-4 px-8 bg-slate-600 rounded-lg text-slate-100"
+              onClick={disconnectWallet}
+            >
+              Disconnect
+            </Button>
+          )}
+        </div>
+        <Image src={ConnectImage} alt="Image of code"></Image>
       </div>
-      <Image src={ConnectImage} alt="Image of code"></Image>
+      <DownArrow href={"/basics#addressComponent"} />
     </div>
   );
 }
