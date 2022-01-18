@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function DownArrow({ href }) {
   return (
     <Link href={href}>
-      <div class="downArrow bounce absolute h-full cursor-pointer">
+      <div className="downArrow bounce absolute h-full cursor-pointer">
         <Image
           width="50"
           height="50"
