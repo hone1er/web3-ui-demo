@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function DownArrow({ href }) {
   return (
     <Link href={href}>
       <div class="downArrow bounce absolute h-full cursor-pointer">
-        <img
+        <Image
           width="50"
           height="50"
           alt="continue arrow"
