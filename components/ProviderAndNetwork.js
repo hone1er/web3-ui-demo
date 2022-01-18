@@ -28,7 +28,11 @@ export default function ProviderAndNetwork() {
           and provide a <code className="bg-slate-300 p-2 my-4">network</code>
         </p>
 
-        <Image src={ProviderImage} alt="Image of code"></Image>
+        <Image
+          className="mb-48"
+          src={ProviderImage}
+          alt="Image of code"
+        ></Image>
       </div>
       <DownArrow href={"/#nextpage"} />
     </div>
