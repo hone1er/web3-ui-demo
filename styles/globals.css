@@ -16,6 +16,9 @@ a {
   box-sizing: border-box;
 }
 
+.welcome {
+  height: calc(100vh - 75px);
+}
 .downArrow {
   position: fixed;
 }

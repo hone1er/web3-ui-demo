@@ -9,7 +9,7 @@ export default function NextSetup() {
       id="nextjs"
     >
       <h2
-        className="text-lg sm:text-2xl md:text-4xl pt-4 pb-16 decoration-slate-400 text-center"
+        className="text-2xl md:text-4xl pt-4 pb-16 decoration-slate-400 text-center"
         id="gettingStarted"
       >
         Getting Started
@@ -20,26 +20,46 @@ export default function NextSetup() {
           viewport={{ once: true }}
           variants={{
             visible: { width: "100%" },
-            hidden: { width: 0, height: "2px" },
+            hidden: { width: 0, height: "1px" },
           }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.75, duration: 1, ease: "backInOut" }}
         ></motion.div>
       </h2>
       <p>
         To get started create your app with{" "}
-        <span className="text-lg text-violet-700">`create-next-app`</span>
+        <motion.span
+          className="inline-block text-lg text-violet-700"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: { x: 0 },
+            hidden: { x: 650 },
+          }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
+        >
+          `create-next-app`
+        </motion.span>
       </p>
       <br />
       <p>
         If you need more information you can follow the documentation here:{" "}
-        <a
-          className="text-amber-500"
+        <motion.a
+          className="inline-block text-amber-500"
           href="https://nextjs.org/docs"
           target="_blank"
           rel="noreferrer"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: { x: 0 },
+            hidden: { x: 500 },
+          }}
+          transition={{ duration: 0.75, ease: "easeOut" }}
         >
           NextJS DOCS
-        </a>{" "}
+        </motion.a>{" "}
       </p>
       <br />
       <p className="text-xs">
