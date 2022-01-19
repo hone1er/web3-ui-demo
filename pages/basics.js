@@ -3,9 +3,17 @@ import "tailwindcss/tailwind.css";
 import Link from "next/link";
 import UsingConnectWallet from "../components/UsingConnectWallet";
 import UsingAddress from "../components/UsingAddress";
+import { motion } from "framer-motion";
 const Basics = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, x: 1000 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{
+        durantion: 1,
+        ease: "backInOut",
+      }}
+    >
       <UsingConnectWallet />
       <UsingAddress />
       <div className="flex w-full justify-center items-center">
@@ -20,7 +28,7 @@ const Basics = () => {
           </p>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

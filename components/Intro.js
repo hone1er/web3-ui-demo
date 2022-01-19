@@ -20,7 +20,7 @@ export default function Intro() {
     >
       <p className="p-16 text-lg w-4/5 text-center leading-8">
         This website is designed to walk you through the use of the{" "}
-        <span className="text-violet-700 uppercase">web3-ui </span>
+        <span className="text-violet-700 uppercase font-bold">web3-ui </span>
         package. We will be using the{" "}
         <code className="bg-slate-300 p-2 my-4">Components</code> and{" "}
         <code className="bg-slate-300 p-2 my-4">Hooks</code> packages but there

@@ -21,11 +21,10 @@ export default function ProviderAndNetwork() {
           <br />
           <br />
           <br />
-          Then wrap your <span className="text-violet-700 uppercase">
-            app
-          </span>{" "}
-          in the hook <code className="bg-slate-300 p-2 my-4">Provider</code>{" "}
-          and provide a <code className="bg-slate-300 p-2 my-4">network</code>
+          Then wrap your{" "}
+          <span className="text-violet-700 uppercase font-bold">app</span> in
+          the hook <code className="bg-slate-300 p-2 my-4">Provider</code> and
+          provide a <code className="bg-slate-300 p-2 my-4">network</code>
         </p>
 
         <Image

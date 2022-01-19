@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import DownArrow from "./DownArrow";
 
@@ -8,12 +9,23 @@ export default function NextSetup() {
       id="nextjs"
     >
       <h2
-        className="text-lg sm:text-2xl md:text-4xl pt-4 pb-16 underline underline-offset-8 decoration-slate-400 text-center"
+        className="text-lg sm:text-2xl md:text-4xl pt-4 pb-16 decoration-slate-400 text-center"
         id="gettingStarted"
       >
         Getting Started
+        <motion.div
+          className="bg-violet-700"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            visible: { width: "100%" },
+            hidden: { width: 0, height: "2px" },
+          }}
+          transition={{ delay: 0.5 }}
+        ></motion.div>
       </h2>
-      <p className="">
+      <p>
         To get started create your app with{" "}
         <span className="text-lg text-violet-700">`create-next-app`</span>
       </p>

@@ -1,12 +1,19 @@
 import React from "react";
 import DownArrow from "./DownArrow";
 import { motion } from "framer-motion";
-
 export default function Welcome() {
   return (
     <div className="flex flex-col relative w-full min-h-max h-screen justify-center items-center bg-slate-100">
       <motion.h1
-        className="text-lg sm:text-3xl md:text-4xl w-full text-center "
+        className="text-3xl sm:text-4xl w-full text-center "
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.7, easings: "easeIn" }}
+      >
+        Welcome to the{" "}
+      </motion.h1>
+      <motion.span
+        className="text-violet-700 font-extrabold text-6xl sm:text-8xl uppercase"
         initial={{
           scale: 0,
         }}
@@ -17,17 +24,44 @@ export default function Welcome() {
         }}
         transition={{
           duration: 1,
-          delay: 0.1,
+          delay: 0.5,
           ease: "backInOut",
           stiffness: 1,
         }}
       >
-        Welcome the{" "}
-        <span className="text-violet-700 font-bold text-4xl md:text-6xl lg:text-8xl uppercase">
-          web3-ui
-        </span>{" "}
-        demo w/ <span className="uppercase text-amber-500">Nextjs</span>!
-      </motion.h1>
+        web3-ui
+      </motion.span>{" "}
+      <div className="flex items-baseline">
+        <motion.h1
+          className="text-3xl md:text-4xl w-full text-center "
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          demo
+        </motion.h1>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.2 }}
+        >
+          /w
+        </motion.span>
+      </div>
+      <motion.span
+        className="uppercase text-amber-500"
+        initial={{ rotateX: 90 }}
+        animate={{
+          rotateX: 0,
+        }}
+        transition={{
+          delay: 1.2,
+          ease: "backInOut",
+          stiffness: 1,
+        }}
+      >
+        Nextjs!
+      </motion.span>
       <DownArrow href={"/#intro"} />
     </div>
   );
