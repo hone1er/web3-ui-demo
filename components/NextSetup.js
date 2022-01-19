@@ -5,7 +5,7 @@ import DownArrow from "./DownArrow";
 export default function NextSetup() {
   return (
     <div
-      className="flex relative justify-center items-center flex-col w-full min-h-screen p-16 bg-slate-300 text-center"
+      className="flex relative justify-center items-center flex-col w-full min-h-screen p-16 bg-slate-500 text-center"
       id="nextjs"
     >
       <h2

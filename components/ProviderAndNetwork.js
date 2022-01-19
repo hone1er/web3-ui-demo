@@ -7,7 +7,7 @@ export default function ProviderAndNetwork() {
   return (
     <div className="flex relative flex-col">
       <div
-        className="flex  flex-col lg:flex-row w-full min-h-screen h-full items-center bg-slate-100"
+        className="flex  flex-col lg:flex-row w-full min-h-screen h-full items-center bg-slate-300"
         id="provider&network"
       >
         <p className="p-16 text-lg w-4/5 leading-10">

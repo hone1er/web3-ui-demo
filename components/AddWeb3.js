@@ -4,7 +4,7 @@ import DownArrow from "./DownArrow";
 export default function AddWeb3() {
   return (
     <div
-      className="flex relative flex-col justify-center items-center bg-slate-200 min-h-screen"
+      className="flex relative flex-col justify-center items-center bg-slate-400 min-h-screen"
       id="web3libraries"
     >
       <p className="p-12 text-lg w-3/4 text-center leading-10">

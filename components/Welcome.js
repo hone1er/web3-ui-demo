@@ -3,7 +3,7 @@ import DownArrow from "./DownArrow";
 import { motion } from "framer-motion";
 export default function Welcome() {
   return (
-    <div className="flex flex-col relative w-full min-h-max h-screen justify-center items-center bg-slate-100">
+    <div className="flex flex-col relative w-full min-h-max h-screen justify-center items-center bg-slate-300">
       <motion.h1
         className="text-3xl sm:text-4xl w-full text-center "
         initial={{ opacity: 0 }}
