@@ -2,6 +2,7 @@ import React from "react";
 import ProviderImage from "../images/Provider.png";
 import Image from "next/image";
 import DownArrow from "./DownArrow";
+import { motion } from "framer-motion";
 
 export default function ProviderAndNetwork() {
   return (
@@ -22,9 +23,24 @@ export default function ProviderAndNetwork() {
           <br />
           <br />
           Then wrap your{" "}
-          <span className="text-violet-700 uppercase font-bold">app</span> in
-          the hook <code className="bg-slate-300 p-2 my-4">Provider</code> and
-          provide a <code className="bg-slate-300 p-2 my-4">network</code>
+          <motion.span
+            className="inline-block text-violet-700 uppercase font-bold"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={{
+              hidden: { rotateX: 90 },
+              visible: { rotateX: 0 },
+            }}
+            transition={{
+              delay: 0.25,
+              duratoin: 0.5,
+            }}
+          >
+            app
+          </motion.span>{" "}
+          in the hook <code className="bg-slate-300 p-2 my-4">Provider</code>{" "}
+          and provide a <code className="bg-slate-300 p-2 my-4">network</code>
         </p>
 
         <Image

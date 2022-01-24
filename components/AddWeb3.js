@@ -15,7 +15,7 @@ export default function AddWeb3() {
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: true }}
-          transition={{ delay: 0.5, duratoin: 0.5 }}
+          transition={{ delay: 0.25, duratoin: 0.5 }}
           variants={{
             hidden: { rotateY: 90 },
             visible: { rotateY: 0 },
