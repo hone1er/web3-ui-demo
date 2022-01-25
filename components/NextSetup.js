@@ -5,11 +5,11 @@ import DownArrow from "./DownArrow";
 export default function NextSetup() {
   return (
     <div
-      className="flex relative justify-center items-center flex-col w-full min-h-screen p-16 bg-slate-500 text-center"
+      className="relative flex min-h-screen w-full flex-col items-center justify-center bg-slate-500 p-16 text-center"
       id="nextjs"
     >
       <h2
-        className="text-2xl md:text-4xl pt-4 pb-16 decoration-slate-400 text-center"
+        className="pt-4 pb-16 text-center text-2xl decoration-slate-400 md:text-4xl"
         id="gettingStarted"
       >
         Getting Started

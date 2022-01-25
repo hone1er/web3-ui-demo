@@ -6,17 +6,17 @@ import { motion } from "framer-motion";
 
 export default function ProviderAndNetwork() {
   return (
-    <div className="flex relative flex-col">
+    <div className="relative flex flex-col">
       <div
-        className="flex  flex-col lg:flex-row w-full min-h-screen h-full items-center bg-slate-300"
+        className="flex  h-full min-h-screen w-full flex-col items-center bg-slate-300 lg:flex-row"
         id="provider&network"
       >
-        <p className="p-16 text-lg w-4/5 leading-10">
+        <p className="w-4/5 p-16 text-lg leading-10">
           The first thing you need to do in order to use all the hooks and
           components properly is import{" "}
-          <code className="bg-slate-300 p-2 my-4">Provider</code> and{" "}
-          <code className="bg-slate-300 p-2 my-4">NETWORKS</code> from{" "}
-          <code className="bg-slate-300 p-2 my-4">
+          <code className="my-4 bg-slate-300 p-2">Provider</code> and{" "}
+          <code className="my-4 bg-slate-300 p-2">NETWORKS</code> from{" "}
+          <code className="my-4 bg-slate-300 p-2">
             &quot;@web3-ui/hooks&quot;
           </code>
           <br />
@@ -24,7 +24,7 @@ export default function ProviderAndNetwork() {
           <br />
           Then wrap your{" "}
           <motion.span
-            className="inline-block text-violet-700 uppercase font-bold"
+            className="inline-block font-bold uppercase text-violet-700"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -39,8 +39,8 @@ export default function ProviderAndNetwork() {
           >
             app
           </motion.span>{" "}
-          in the hook <code className="bg-slate-300 p-2 my-4">Provider</code>{" "}
-          and provide a <code className="bg-slate-300 p-2 my-4">network</code>
+          in the hook <code className="my-4 bg-slate-300 p-2">Provider</code>{" "}
+          and provide a <code className="my-4 bg-slate-300 p-2">network</code>
         </p>
 
         <Image

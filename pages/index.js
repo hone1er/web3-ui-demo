@@ -23,19 +23,19 @@ const Home = () => {
       <AddWeb3 />
       <ProviderAndNetwork />
       <div
-        className="flex flex-col lg:flex-row-reverse w-full min-h-screen h-full justify-center items-center bg-slate-200"
+        className="flex h-full min-h-screen w-full flex-col items-center justify-center bg-slate-200 lg:flex-row-reverse"
         id="nextpage"
       >
-        <div className="flex flex-col justify-center items-center p-10">
-          <p className="p-4 text-lg w-4/5 leading-10">
+        <div className="flex flex-col items-center justify-center p-10">
+          <p className="w-4/5 p-4 text-lg leading-10">
             Great! Now we are ready to dive into some basic components and
             hooks!
           </p>
-          <p className="p-4 text-lg w-4/5 leading-10 m-4">
+          <p className="m-4 w-4/5 p-4 text-lg leading-10">
             Let&apos;s continue on the next page
           </p>
           <Link href="/basics">
-            <p className="py-4 px-8 hover:cursor-pointer bg-slate-600 rounded-lg text-slate-100">
+            <p className="rounded-lg bg-slate-600 py-4 px-8 text-slate-100 hover:cursor-pointer">
               next
             </p>
           </Link>

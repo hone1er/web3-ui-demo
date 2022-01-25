@@ -7,11 +7,11 @@ import gitIcon from "../images/github-logo.png";
 export default function Intro() {
   return (
     <div
-      className="flex flex-col relative justify-center items-center bg-slate-400 min-h-screen"
+      className="relative flex min-h-screen flex-col items-center justify-center bg-slate-400"
       id="intro"
     >
       <motion.div
-        className="flex flex-col relative justify-center items-center bg-slate-400 min-h-screen"
+        className="relative flex min-h-screen flex-col items-center justify-center bg-slate-400"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -21,10 +21,10 @@ export default function Intro() {
           hidden: { opacity: 0 },
         }}
       >
-        <p className="p-16 text-lg w-4/5 text-center leading-8">
+        <p className="w-4/5 p-16 text-center text-lg leading-8">
           This website is designed to walk you through the use of the{" "}
           <motion.span
-            className="inline-block text-violet-700 uppercase font-bold"
+            className="inline-block font-bold uppercase text-violet-700"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -40,12 +40,12 @@ export default function Intro() {
             web3-ui
           </motion.span>
           {"  "}package. We will be using the{" "}
-          <code className="bg-slate-300 p-2 my-4">Components</code> and{" "}
-          <code className="bg-slate-300 p-2 my-4">Hooks</code> packages but
-          there is also a <code className="bg-slate-300 p-2 my-4">Core</code>{" "}
+          <code className="my-4 bg-slate-300 p-2">Components</code> and{" "}
+          <code className="my-4 bg-slate-300 p-2">Hooks</code> packages but
+          there is also a <code className="my-4 bg-slate-300 p-2">Core</code>{" "}
           package with a more opinionated implementation
         </p>
-        <p className="flex flex-col md:flex-row items-center justify-center p-16 text-lg w-4/5 text-center leading-8">
+        <p className="flex w-4/5 flex-col items-center justify-center p-16 text-center text-lg leading-8 md:flex-row">
           This is an open-source project. Check out the code and contribute:
           <motion.a
             className="mx-4"

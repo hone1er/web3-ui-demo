@@ -16,14 +16,14 @@ const Basics = () => {
     >
       <UsingConnectWallet />
       <UsingAddress />
-      <div className="flex w-full justify-center items-center">
+      <div className="flex w-full items-center justify-center">
         <Link href="/">
-          <p className="py-4 px-8 m-4 hover:cursor-pointer bg-slate-600 rounded-lg text-slate-100">
+          <p className="m-4 rounded-lg bg-slate-600 py-4 px-8 text-slate-100 hover:cursor-pointer">
             back
           </p>
         </Link>
         <Link href="/basics">
-          <p className="py-4 px-8 m-4 hover:cursor-pointer bg-slate-600 rounded-lg text-slate-100">
+          <p className="m-4 rounded-lg bg-slate-600 py-4 px-8 text-slate-100 hover:cursor-pointer">
             next
           </p>
         </Link>

@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Provider network={NETWORKS.rinkeby}>
       <motion.nav
-        className="flex items-center shadow-sm bg-transparent p-6 h-16 w-full"
+        className="flex h-16 w-full items-center bg-transparent p-6 shadow-sm"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
@@ -19,9 +19,9 @@ function MyApp({ Component, pageProps }) {
           stiffness: 1,
         }}
       >
-        <div className="flex justify-center items-center nav-wrap w-full">
+        <div className="nav-wrap flex w-full items-center justify-center">
           <Link href="/">
-            <a className="text-4xl text-violet-700  w-full font-bold">
+            <a className="w-full text-4xl  font-bold text-violet-700">
               Web3-UI
             </a>
           </Link>
@@ -29,12 +29,12 @@ function MyApp({ Component, pageProps }) {
           {/* <Link href="/">
           <a className="mr-4 text-purple-500">Home</a>
         </Link> */}
-          <div className="flex justify-end items-end w-full">
+          <div className="flex w-full items-end justify-end">
             <Link href="">
-              <a className="mr-4 text-violet-400 invisible">Basics</a>
+              <a className="invisible mr-4 text-violet-400">Basics</a>
             </Link>
             <Link href="">
-              <a className="mr-4 text-violet-400 invisible">Advanced</a>
+              <a className="invisible mr-4 text-violet-400">Advanced</a>
             </Link>
           </div>
         </div>

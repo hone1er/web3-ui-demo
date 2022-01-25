@@ -8,24 +8,24 @@ export default function UsingAddress() {
   const { connection } = useWallet();
   return (
     <div id="addressComponent">
-      <div className="flex flex-col lg:flex-row-reverse w-full min-h-screen h-full items-center bg-slate-300">
-        <div className="flex flex-col justify-center items-center p-10">
-          <p className="p-4 text-lg w-4/5 leading-10">
+      <div className="flex h-full min-h-screen w-full flex-col items-center bg-slate-300 lg:flex-row-reverse">
+        <div className="flex flex-col items-center justify-center p-10">
+          <p className="w-4/5 p-4 text-lg leading-10">
             Once the user is connected you will want to display their address.
-            Using <code className="bg-slate-200 p-2 my-4">connection</code> in
+            Using <code className="my-4 bg-slate-200 p-2">connection</code> in
             the
-            <code className="bg-slate-200 p-2 my-4">useWallet</code> hook from
+            <code className="my-4 bg-slate-200 p-2">useWallet</code> hook from
             the last section along with the{" "}
-            <code className="bg-slate-200 p-2 my-4">Address</code> component
+            <code className="my-4 bg-slate-200 p-2">Address</code> component
             will display their address, shorten it, and even display their ENS
             name!
           </p>
-          <p className="p-4 text-lg w-4/5 leading-10">
+          <p className="w-4/5 p-4 text-lg leading-10">
             You should see your address shown below twice. First full length,
             then shortened. If you have an ENS name you should be able to see
             that as well!
           </p>
-          <p className="p-4 text-xs w-4/5 leading-6 mb-4">
+          <p className="mb-4 w-4/5 p-4 text-xs leading-6">
             *if you do not see your address below, go to the previous section
             and make sure your wallet is connected.
           </p>

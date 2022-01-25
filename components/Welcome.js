@@ -3,9 +3,9 @@ import DownArrow from "./DownArrow";
 import { motion } from "framer-motion";
 export default function Welcome() {
   return (
-    <div className="welcome flex flex-col relative w-full min-h-max max justify-center items-center bg-slate-300">
+    <div className="welcome max relative flex min-h-max w-full flex-col items-center justify-center bg-slate-300">
       <motion.h1
-        className="text-3xl sm:text-4xl w-full text-center "
+        className="w-full text-center text-3xl sm:text-4xl "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7, easings: "easeIn" }}
@@ -13,7 +13,7 @@ export default function Welcome() {
         Welcome to the{" "}
       </motion.h1>
       <motion.span
-        className="text-violet-700 font-extrabold text-6xl sm:text-8xl uppercase"
+        className="text-6xl font-extrabold uppercase text-violet-700 sm:text-8xl"
         initial={{
           scale: 0,
           rotateX: 90,
@@ -37,7 +37,7 @@ export default function Welcome() {
       </motion.span>{" "}
       <div className="flex items-baseline">
         <motion.h1
-          className="text-3xl md:text-4xl w-full text-center "
+          className="w-full text-center text-3xl md:text-4xl "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
