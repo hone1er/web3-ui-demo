@@ -28,16 +28,15 @@ export default function Welcome() {
         }}
         transition={{
           duration: 1,
-          delay: 0.5,
           ease: "backInOut",
           stiffness: 1,
         }}
       >
         web3-ui
       </motion.span>{" "}
-      <div className="flex items-baseline">
+      <div className="z-10 flex items-baseline">
         <motion.h1
-          className="w-full text-center text-3xl md:text-4xl "
+          className="z-10 w-full text-center text-3xl md:text-4xl "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7 }}
@@ -47,19 +46,20 @@ export default function Welcome() {
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
+          transition={{ delay: 0.75 }}
         >
           /w
         </motion.span>
       </div>
       <motion.span
-        className="uppercase text-amber-500"
-        initial={{ rotateX: 90 }}
+        className="z-0 uppercase text-amber-500"
+        initial={{ rotateX: 90, y: -20 }}
         animate={{
           rotateX: 0,
+          y: 0,
         }}
         transition={{
-          delay: 1.2,
+          delay: 0.75,
           ease: "backInOut",
           stiffness: 1,
         }}

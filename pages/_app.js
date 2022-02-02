@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          delay: 1.25,
+          delay: 0.75,
           duration: 0.5,
           ease: "backInOut",
           stiffness: 1,
